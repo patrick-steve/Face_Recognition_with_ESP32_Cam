@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Pacifico&display=swap');
+
+body {
+  background-color: rgb(31, 30, 30);
+}
+
+#camStream {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  left: 430px;
+  width: 640px;
+  height: 480px;
+  border: 3px solid #c4a35a;
+}
+
+#canvas {
+  position: absolute;
+  top: 10px;
+  left: 450px;
+}
+
+.name {
+  color: #c4a35a;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  position: absolute;
+  top: 550px;
+  left: 540px;
+}
+.face-name {
+  color: #c4a35a;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 30px;
+  position: absolute;
+  top: 532px;
+  left: 742px;
+}
+
+#container {
+  margin: 0 auto;
+  margin-top: 50px;
+  position: center;
+  justify-content: center;
+  
+}
+
+.button-container {
+  position: absolute;
+  top: 620px;
+  left: 270px;
+}
+
+.button {
+  background-color:  rgb(31, 30, 30);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ff6e40;
+  height: 50px;
+  width: 300px;
+  border: 3px solid #c4a35a;
+  margin: 10px;
+}
+
+.input-container {
+  position: absolute;
+  top: 550px;
+  left: 480px;
+}
+
+
+.input {
+  background-color: rgb(31, 30, 30);
+  border: 3px solid #c4a35a;
+  border-radius: 20px;
+  width: 250px;
+  height: 20px;
+  color: #c4a35a;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+}
