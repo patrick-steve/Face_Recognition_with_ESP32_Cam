@@ -71,8 +71,12 @@ const AddFace = () => {
     
         }, 100)
     }
-
     const playStream = () => {
+        const videoObj = document.getElementById('camStream')
+        videoObj.play()
+      }
+    
+      const playWebcamStream = () => {
         const videoObj = document.getElementById('camStream')
     
         if(navigator.mediaDevices.getUserMedia) {
@@ -88,7 +92,6 @@ const AddFace = () => {
             })
         }
       }
-
 
     return (
         <div>

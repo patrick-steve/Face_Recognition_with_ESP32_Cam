@@ -85,6 +85,11 @@ function App() {
 
   const playStream = () => {
     const videoObj = document.getElementById('camStream')
+    videoObj.play()
+  }
+
+  const playWebcamStream = () => {
+    const videoObj = document.getElementById('camStream')
 
     if(navigator.mediaDevices.getUserMedia) {
       navigator.mediaDevices.getUserMedia({ video: true })
@@ -129,7 +134,10 @@ function App() {
       </div>
       <div id="container" className='container'>
         { /*<video autoPlay id="camStream" className="camStream"></video> */ }
-        <img crossOrigin='anonymous' src="http://192.168.1.6/stream" className='camStream' id="camStream"/>
+        { /*<img crossOrigin='anonymous' alt='Stream' className='camStream' id="camStream"/> */ }
+        <video id="camStream" className="camStream">
+          <source src='https://192.168.12.1/stream' type="video/mp4"></source>
+        </video>
       </div>
       <div className='button-container'>
         <button onClick={loadModels} className='button'>Load Tensorflow Models</button>
