@@ -135,6 +135,7 @@ function App() {
         <button onClick={loadModels} className='button'>Load Tensorflow Models</button>
         <button onClick={playStream} className='button'>Play</button>
         <button onClick={addFace} className="button">Add Face</button>
+        <br></br>
         <button onClick={handleFlashON} className="button">Flash ON</button>
         <button onClick={handleFlashOFF} className="button">Flash OFF</button>
       </div>
